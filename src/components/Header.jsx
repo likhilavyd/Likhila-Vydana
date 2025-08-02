@@ -1,6 +1,7 @@
+import "../styles/Header.css";
 function Header() {
   return (
-        <header className="bg-dark text-white py-3 sticky-top z-3 ml-0">
+        <header className="header py-3 sticky-top z-3">
         <nav className="container d-flex justify-content-between align-items-center">
             <h1 className="fs-4 m-0">Likhila Vydana</h1>
             <ul className="nav gap-3">
