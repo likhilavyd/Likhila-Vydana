@@ -6,11 +6,11 @@ function About() {
         <div className="about-container">
             {/* About Text */}
             <div className="about">
-                <h2 className="title">About Me</h2>
-                    <p className="content">
+                <h2 className="title-about">About Me</h2>
+                    <p className="content-about">
                     Hi, I'm Likhila Vydana
                     </p>
-                    <p className="content">
+                    <p className="content-about">
                     A student and passionate web developer with a strong interest in 
                     clean UI and interactive design. I focus on building responsive, user-friendly websites that 
                     combine functionality with visual appeal. My journey began with a curiosity about how websites 

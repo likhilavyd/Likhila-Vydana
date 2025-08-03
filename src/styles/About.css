@@ -2,30 +2,33 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto;
+    background-image: linear-gradient( #D2B6F6, #C7A4F4);
 
 }
 .about, .image{
-    background-color: #CAA8F5;
     padding: 50px;
-    justify-content: left;
-
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
 }
-.title {
+.title-about {
     font-family: "Playwrite AU QLD", cursive;
     color: #592E83;
 }
-.content {
-    justify-content: left;
+.content-about {
     margin-top: 50px;
     color: #592E83;
     font-family: "Playpen Sans", cursive;
     font-size: larger;
 }
 .image {
+    margin-top: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-family: "Playpen Sans", cursive;
+
 }
 img {
     width: 100px;

@@ -6,25 +6,25 @@ function Header() {
             <h1 className="fs-4 m-0">Likhila Vydana</h1>
             <ul className="nav gap-3">
             <li className="nav-item">
-                <a className="nav-link text-white fw-medium" href="#about">About</a>
+                <a className="nav-link fw-medium" href="#about">About</a>
             </li>
             <li className="nav-item">
-                <a className="nav-link text-white fw-medium" href="#personal details">Personal Details</a>
+                <a className="nav-link fw-medium" href="#overview">Overview Details</a>
             </li>
             <li className="nav-item">
-                <a className="nav-link text-white fw-medium" href="#resume">Resume</a>
+                <a className="nav-link fw-medium" href="#resume">Resume</a>
             </li>
             <li className="nav-item">
-                <a className="nav-link text-white fw-medium" href="#skills">Skills</a>
+                <a className="nav-link fw-medium" href="#skills">Skills</a>
             </li>
             <li className="nav-item">
-                <a className="nav-link text-white fw-medium" href="#projects">Projects</a>
+                <a className="nav-link fw-medium" href="#projects">Projects</a>
             </li>
             <li className="nav-item">
-                <a className="nav-link text-white fw-medium" href="#experience">Experience</a>
+                <a className="nav-link fw-medium" href="#experience">Experience</a>
             </li>
             <li className="nav-item">
-                <a className="nav-link text-white fw-medium" href="#contact">Contact</a>
+                <a className="nav-link fw-medium" href="#contact">Contact</a>
             </li>
             </ul>
         </nav>

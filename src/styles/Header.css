@@ -1,4 +1,20 @@
 .header {
     background-color: #230C33;
-    color: #CAA8F5;
+}
+
+.header h1 {
+    color: #E6DAF3 !important;
+}
+
+.header .nav-link {
+    color: #E6DAF3 ;
+}
+
+.header .nav-link:hover {
+    color: #E6DAF3;
+}
+
+/* Smooth scrolling for anchor links */
+html {
+    scroll-behavior: smooth;
 }
