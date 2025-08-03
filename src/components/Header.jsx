@@ -9,7 +9,7 @@ function Header() {
                 <a className="nav-link fw-medium" href="#about">About</a>
             </li>
             <li className="nav-item">
-                <a className="nav-link fw-medium" href="#overview">Overview Details</a>
+                <a className="nav-link fw-medium" href="#overview">Overview</a>
             </li>
             <li className="nav-item">
                 <a className="nav-link fw-medium" href="#resume">Resume</a>

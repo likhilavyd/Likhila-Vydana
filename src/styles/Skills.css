@@ -22,7 +22,7 @@
 
 .skills-list {
     list-style-type: none;
-    padding: 10px;
+    padding:10px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -71,4 +71,6 @@
 .skill-label {
     font-size: 1rem;
     color: white;
+    margin-bottom: 20px;
+    align-self: center;
 }

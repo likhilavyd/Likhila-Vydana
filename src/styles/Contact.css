@@ -1,0 +1,101 @@
+.contact-section {
+    background: linear-gradient(#8336E7, #7824E5);
+    padding: 80px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 50vh;
+    justify-content: center;
+}
+
+.contact-title {
+    font-family: "Playwrite AU QLD", cursive;
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 600px;
+    width: 100%;
+}
+
+.contact-item {
+    font-family: "Playpen Sans", cursive;
+    font-size: 1.3rem;
+    color: #333;
+    line-height: 1.6;
+    background: white;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(89, 46, 131, 0.1);
+}
+
+.contact-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.contact-label {
+    font-weight: 600;
+    color: #592E83;
+    margin-right: 10px;
+}
+
+.contact-link {
+    color: #6B46C1;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+    color: #8B5CF6;
+    text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 50px 20px;
+    }
+    
+    .contact-title {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+    
+    .contact-content {
+        gap: 20px;
+    }
+    
+    .contact-item {
+        font-size: 1.1rem;
+        padding: 15px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-title {
+        font-size: 1.8rem;
+    }
+    
+    .contact-item {
+        font-size: 1rem;
+        padding: 12px 15px;
+        text-align: left;
+    }
+    
+    .contact-label {
+        display: block;
+        margin-bottom: 5px;
+    }
+}

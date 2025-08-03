@@ -4,6 +4,9 @@ import Header from './components/Header'
 import Overview from './components/Overview'
 import Resume from './components/Resume'
 import Skills from './components/Skills'
+import Projects from './components/Projects'
+import Experience from './components/Experience'
+import Contact from './components/Contact'
 
 function App() {
   return (
@@ -33,17 +36,17 @@ function App() {
 
       {/* Projects Section */}
       <div id="projects">
-        {/* Add your Projects component here when you create it */}
+        <Projects />
       </div>
 
       {/* Experience Section */}
       <div id="experience">
-        {/* Add your Experience component here when you create it */}
+        <Experience />
       </div>
 
       {/* Contact Section */}
       <div id="contact">
-        {/* Add your Contact component here when you create it */}
+        <Contact />
       </div>
     </>
   )
