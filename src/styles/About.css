@@ -42,3 +42,64 @@ img {
     margin-top: 20px;
     text-align: center;
 }
+
+/* Highlighted name styling */
+.highlighted-name {
+    background: linear-gradient(45deg, #9A5BEC, #8E48EA, #8336E7, #7824E5);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-animation 3s ease-in-out infinite;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* Typing animation container */
+.typing-container {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.typing-text {
+    font-family: "Playpen Sans", cursive;
+    font-size: 1.4em;
+    font-weight: 600;
+    color: #8336E7;
+    display: inline-block;
+    min-height: 1.5em;
+}
+
+/* Blinking cursor */
+.cursor {
+    color: #9A5BEC;
+    animation: blink 1s infinite;
+    font-weight: normal;
+}
+
+/* Description styling */
+.description {
+    margin-top: 20px;
+}
+
+/* Keyframe animations */
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes blink {
+    0%, 50% {
+        opacity: 1;
+    }
+    51%, 100% {
+        opacity: 0;
+    }
+}

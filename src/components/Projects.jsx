@@ -10,10 +10,11 @@ function Projects() {
       <div className="projects-list">
         <Card
           title="MyHealthMate"
-          description="A web-based personal health record and appointment management portal. Features secure authentication, digital medical records, appointment booking, and health reminders."
+          description="A comprehensive web-based personal health record and appointment management portal. Features secure user authentication, digital medical records storage, appointment booking system, and automated health reminders."
           icon={<img src={myhealthmateIcon} alt="MyHealthMate Icon" />}
-          techStack={["HTML", "CSS", "Bootstrap", "JavaScript", "Firebase"]}
-          link="https://likhilavyd.github.io/HackOrbit_HackIt/"
+          techStack={["HTML5", "CSS3", "Bootstrap", "JavaScript", "Firebase", "Responsive Design"]}
+          demoLink="https://likhilavyd.github.io/HackOrbit_HackIt/"
+          codeLink="https://github.com/likhilavyd/HackOrbit_HackIt"
         />
       </div>
     </section>

@@ -67,11 +67,11 @@
     line-height: 1.3;
     margin: 0;
     overflow: visible;
-    flex-shrink: 1;
+    flex-grow: 1;
 }
 
 .project-tech-stack {
-    margin: 0;
+    margin: 10px 0;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -94,9 +94,9 @@
 }
 
 .tech-badge {
-    background-color: #6B46C1;
+    background: linear-gradient(135deg, #9A5BEC, #8E48EA);
     color: white;
-    padding: 3px 8px;
+    padding: 4px 8px;
     border-radius: 12px;
     font-size: 0.65rem;
     font-weight: 500;
@@ -106,31 +106,54 @@
 }
 
 .project-card:hover .tech-badge {
-    background-color: #8B5CF6;
+    background: linear-gradient(135deg, #8E48EA, #8336E7);
     transform: translateY(-1px);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+.project-links {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: auto;
+    flex-shrink: 0;
+}
+
 .project-link {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     color: white;
     text-decoration: none;
-    background: linear-gradient(135deg, #6B46C1, #8B5CF6);
-    padding: 8px 16px;
+    padding: 8px 12px;
     border-radius: 8px;
-    margin-top: 0;
+    margin: 2px;
     display: inline-block;
     transition: all 0.3s ease;
     font-weight: 600;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.2);
-    align-self: center;
-    flex-shrink: 0;
 }
 
-.project-link:hover {
-    background: linear-gradient(135deg, #8B5CF6, #A78BFA);
+.demo-link {
+    background: linear-gradient(135deg, #7824E5, #6B1FA8);
+}
+
+.demo-link:hover {
+    background: linear-gradient(135deg, #8336E7, #7824E5);
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px rgba(120, 36, 229, 0.4);
     text-decoration: none;
+    color: white;
+}
+
+.code-link {
+    background: linear-gradient(135deg, #7824E5, #6B1FA8);
+}
+
+.code-link:hover {
+    background: linear-gradient(135deg, #8336E7, #7824E5);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(120, 36, 229, 0.4);
+    text-decoration: none;
+    color: white;
 }
