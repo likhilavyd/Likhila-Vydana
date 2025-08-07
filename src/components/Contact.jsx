@@ -164,8 +164,8 @@ function Contact() {
               <div className="method-icon">💻</div>
               <div className="method-content">
                 <span className="method-label">LeetCode</span>
-                <a href="https://leetcode.com/likhilavyd" target="_blank" rel="noopener noreferrer" className="method-link">
-                  leetcode.com/likhilavyd
+                <a href="https://leetcode.com/u/likhila19/" target="_blank" rel="noopener noreferrer" className="method-link">
+                  leetcode.com/u/likhila19
                 </a>
               </div>
             </div>

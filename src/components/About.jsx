@@ -12,7 +12,7 @@ function About() {
     "React Enthusiast", 
     "Python Developer",
     "UI/UX Designer",
-    "Problem Solver"
+    "Web Developer"
   ];
 
   useEffect(() => {

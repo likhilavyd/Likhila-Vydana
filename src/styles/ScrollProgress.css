@@ -10,20 +10,7 @@
   gap: 10px;
   height: calc(100vh - 80px); /* Full height minus header space */
   justify-content: flex-start;
-  pointer-events: none; /* Allow clicks to pass through */ress Container */
-.scroll-progress-container {
-  position: fixed;
-  top: 80px; /* Start below the header */
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: -1; /* Behind all content */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  height: calc(100vh - 80px); /* Full height minus header space */
-  justify-content: flex-start;
-  pointer-events: none; /* Ensure it doesn't interfere with clicks */
+  pointer-events: none; /* Allow clicks to pass through */
   
   /* CSS Custom Properties for adaptive coloring */
   --fluid-opacity: 0.7;
@@ -47,19 +34,20 @@
   width: 100%;
   background: linear-gradient(
     180deg,
-    rgba(154, 91, 236, 0.8) 0%,
-    rgba(142, 72, 234, 0.8) 25%,
-    rgba(131, 54, 231, 0.8) 50%,
-    rgba(120, 36, 229, 0.8) 75%,
-    rgba(107, 31, 168, 0.8) 100%
+    rgba(154, 91, 236, 1.0) 0%,
+    rgba(142, 72, 234, 1.0) 25%,
+    rgba(131, 54, 231, 1.0) 50%,
+    rgba(120, 36, 229, 1.0) 75%,
+    rgba(107, 31, 168, 1.0) 100%
   );
   border-radius: 50px;
   position: absolute;
   top: 0;
+  min-height: 2px; /* Always show a little bit of fluid */
   transition: height 0.3s ease-out;
   overflow: hidden;
   animation: fluidWave 3s ease-in-out infinite;
-  box-shadow: 0 0 8px rgba(154, 91, 236, 0.4);
+  box-shadow: 0 0 12px rgba(154, 91, 236, 0.6);
 }
 
 /* Rotating Star Progress Indicator */
@@ -78,11 +66,9 @@
 @keyframes starGlow {
   0% {
     filter: drop-shadow(0 0 6px rgba(255, 215, 0, 0.8));
-    scale: 1;
   }
   100% {
     filter: drop-shadow(0 0 12px rgba(255, 215, 0, 1));
-    scale: 1.05;
   }
 }
 
@@ -106,13 +92,13 @@
 .scroll-progress-container.light .scroll-progress-fill {
   background: linear-gradient(
     180deg,
-    rgba(154, 91, 236, 0.9) 0%,
-    rgba(142, 72, 234, 0.9) 25%,
-    rgba(131, 54, 231, 0.9) 50%,
-    rgba(120, 36, 229, 0.9) 75%,
-    rgba(107, 31, 168, 0.9) 100%
+    rgba(154, 91, 236, 1.0) 0%,
+    rgba(142, 72, 234, 1.0) 25%,
+    rgba(131, 54, 231, 1.0) 50%,
+    rgba(120, 36, 229, 1.0) 75%,
+    rgba(107, 31, 168, 1.0) 100%
   );
-  box-shadow: 0 0 10px rgba(154, 91, 236, 0.6);
+  box-shadow: 0 0 15px rgba(154, 91, 236, 0.8);
 }
 
 .scroll-progress-container.light .scroll-progress-star {
@@ -123,13 +109,13 @@
 .scroll-progress-container.dark .scroll-progress-fill {
   background: linear-gradient(
     180deg,
-    rgba(154, 91, 236, 0.7) 0%,
-    rgba(142, 72, 234, 0.7) 25%,
-    rgba(131, 54, 231, 0.7) 50%,
-    rgba(120, 36, 229, 0.7) 75%,
-    rgba(107, 31, 168, 0.7) 100%
+    rgba(154, 91, 236, 0.9) 0%,
+    rgba(142, 72, 234, 0.9) 25%,
+    rgba(131, 54, 231, 0.9) 50%,
+    rgba(120, 36, 229, 0.9) 75%,
+    rgba(107, 31, 168, 0.9) 100%
   );
-  box-shadow: 0 0 8px rgba(154, 91, 236, 0.4);
+  box-shadow: 0 0 12px rgba(154, 91, 236, 0.6);
 }
 
 .scroll-progress-container.dark .scroll-progress-star {
@@ -173,22 +159,6 @@
   box-shadow: 0 0 25px rgba(255, 255, 255, 0.9);
 }
 
-/* Keyframe Animations */
-@keyframes fluidWave {
-  0%, 100% {
-    border-radius: 50px;
-  }
-  25% {
-    border-radius: 50px 50px 40px 60px;
-  }
-  50% {
-    border-radius: 60px 40px 50px 50px;
-  }
-  75% {
-    border-radius: 40px 60px 60px 40px;
-  }
-}
-
 @keyframes bubble {
   0%, 100% {
     transform: translateX(-50%) scale(1);
@@ -200,57 +170,17 @@
   }
 }
 
-/* Hover Effects */
-.scroll-progress-container:hover .scroll-progress-track {
-  width: 8px;
-  box-shadow: 0 6px 20px rgba(154, 91, 236, 0.4);
-}
-
-.scroll-progress-container:hover .progress-percentage {
-  transform: scale(1.1);
-  box-shadow: 0 4px 15px rgba(154, 91, 236, 0.5);
-}
-
-.scroll-progress-container:hover .progress-bubble {
-  animation-duration: 1.5s;
-  box-shadow: 0 0 15px rgba(154, 91, 236, 0.8);
-}
-
 /* Mobile Responsive */
 @media (max-width: 768px) {
-  .scroll-progress-container {
-    right: 15px;
-    top: 45%;
-  }
-  
-  .scroll-progress-track {
-    height: 250px;
-    width: 5px;
-  }
-  
-  .progress-percentage {
-    font-size: 0.6rem;
-    padding: 3px 6px;
-  }
-  
-  .progress-bubble {
-    width: 10px;
-    height: 10px;
-  }
-}
-
-@media (max-width: 480px) {
   .scroll-progress-container {
     right: 10px;
   }
   
-  .scroll-progress-track {
-    height: 200px;
-    width: 4px;
+  .scroll-progress-star {
+    font-size: 18px;
   }
   
-  .progress-percentage {
-    font-size: 0.5rem;
-    padding: 2px 5px;
+  .scroll-progress-track {
+    width: 14px;
   }
 }
